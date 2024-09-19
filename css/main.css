@@ -1,0 +1,356 @@
+/* 
+    Index:
+        1 -- General
+        2 -- Text
+        3 -- Nav + Footer
+        4 -- Hero
+        5 -- Sections
+*/
+
+
+/* 1 -- General */
+
+html {
+    font-size: 0.694vw;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--c-lightgray);
+}
+
+
+/* 2 -- Text */
+
+h1 {
+    font-size: var(--txt-h1);
+    font-weight: var(--fw-strong);
+    line-height: var(--txt-h1-lh);
+}
+
+h3 {
+    font-size: var(--txt-h3);
+    font-weight: var(--fw-regular);
+    line-height: var(--txt-h3-lh);
+}
+
+h2 {
+    font-size: var(--txt-h2);
+    line-height: var(--txt-h2-lh);
+    font-weight: var(--fw-strong);
+}
+
+h4 {
+    font-size: var(--txt-h4);
+    line-height: var(--txt-h4-lh);
+    font-weight: var(--fw-regular);
+}
+
+p {
+    font-size: var(--txt-body);
+    line-height: var(--txt-body-lh);
+    font-weight: var(--fw-regular);
+}
+
+
+
+/* 3 -- Nav + Footer */
+
+/* Nav */
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--c-white);
+    padding: var(--unit-2) var(--padd-col-main);
+    transition: all 0.5s cubic-bezier(.25, 1, .5, 1);
+    border-radius: 0px 0px var(--unit-5) var(--unit-5);
+}
+
+.scroll-up .navbar {
+    transform: translateY(0);
+}
+
+.scroll-down .navbar {
+    transform: translateY(-100%);
+}
+
+.nav-logo {
+    height: var(--unit-3);
+}
+
+.btn {
+    color: var(--c-white);
+    background-color: var(--c-black);
+    display: flex;
+    padding: var(--unit-2) var(--unit-3);
+    border-radius: 10rem;
+    transition: 0.3s;
+    font-size: var(--txt-body);
+    line-height: 100%;
+}
+
+.btn:hover {
+    opacity: 80%;
+}
+
+/* Footer */
+
+footer {
+    padding: var(--padd) var(--padd-col-main);
+}
+
+.legal-wrapper {
+    column-gap: var(--unit-3);
+}
+
+.legal-wrapper a {
+    font-size: var(--txt-body);
+    line-height: 100%;
+    color: var(--c-darkgray);
+    transition: 0.3s;
+}
+
+.legal-wrapper a:hover {
+    color: var(--c-black);
+}
+
+.rrss-wrapper {
+    column-gap: var(--unit);
+}
+
+.rrss-wrapper a {
+    color: var(--c-white);
+    background-color: var(--c-black);
+    border-radius: 50%;
+    width: var(--unit-5);
+    height: var(--unit-5);
+    line-height: var(--unit-5);
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.rrss-wrapper a:hover {
+    opacity: 80%;
+}
+
+
+
+/* 5 -- Sections */
+
+/* Main */
+
+main {
+    padding: 0px var(--padd-col-main);
+}
+
+/* Sections */
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    align-items: center;
+}
+
+.section-solid {
+    background-color: var(--c-yellow);
+    border-radius: var(--unit-5);
+}
+
+.section-title-wrapper {
+    row-gap: var(--unit-3);
+}
+
+
+/* Hero */
+
+.section-hero {
+    padding: var(--unit-6) 0px;
+}
+
+.section-hero .hero-title-wrapper {
+    grid-column: 2 / span 5;
+}
+
+.section-hero img {
+    grid-column: 7 / span 5;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-cta-title-wrapper {
+    text-align: center;
+}
+
+.hero-title-wrapper h1 {
+    margin-bottom: var(--unit-3);
+}
+
+.badge-wrapper {
+    column-gap: var(--unit);
+    margin-top: var(--unit-6);
+}
+
+.badge-wrapper img:hover {
+    opacity: 80%;
+}
+
+.badge-wrapper img {
+    height: var(--unit-7);
+    width: auto;
+    transition: 0.3s;
+}
+
+
+/* Section Time */
+
+.section-time {
+    padding: var(--unit-15) 0;
+}
+
+.section-time img {
+    grid-column: 2 / span 5;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.section-time .section-title-wrapper {
+    grid-column: 8 / span 4;
+}
+
+
+/* Section Card */
+.section-card {
+    padding: var(--unit-15) 0;
+}
+
+.section-card video {
+    grid-column: 7 / span 5;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-card .section-title-wrapper {
+    grid-column: 2 / span 4;
+}
+
+.section-card ul {
+    list-style: none;
+    margin-top: var(--unit-6);
+}
+
+.section-card ul li {
+    padding: var(--unit-2) 0px;
+    column-gap: var(--unit-3);
+    border-top: 1px solid var(--c-gray);
+}
+
+.section-card i {
+    background-color: var(--c-green);
+    width: var(--unit-4);
+    height: var(--unit-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: var(--unit-2);
+}
+
+/* Section Notifications */
+.section-notifications {
+    padding: 0;
+}
+
+.section-notifications .img-background {
+    grid-column: 7 / span 5;
+    width: 100%;
+    height: auto;
+    background-image: url('../img/MetropolisUnderground-Notifications.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.section-notifications .section-title-wrapper {
+    grid-column: 2 / span 4;
+}
+
+
+/* Section Activity */
+.section-activity {
+    padding-top: var(--unit-15);
+    padding-bottom: calc(var(--unit-15)/2);
+}
+
+.section-activity video {
+    grid-column: 2 / span 5;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-activity .section-title-wrapper {
+    grid-column: 8 / span 4;
+}
+
+
+/* Section Impact */
+.section-impact {
+    padding-top: calc(var(--unit-15)/2);
+    padding-bottom: var(--unit-15);
+}
+
+.section-impact .section-title-wrapper {
+    grid-column: 2 / span 4;
+}
+
+.section-impact-image {
+    grid-column: 7 / span 5;
+    position: relative;
+    height: 100%;
+}
+
+.co2-snippet {
+    padding: var(--unit-3);
+    background-color: var(--c-white);
+    border-radius: var(--unit-2);
+    position: absolute;
+    top: var(--unit-5);
+    right: 0;
+    row-gap: var(--unit-3);
+    box-shadow: 2px 4px 16px 0px rgba(26, 26, 26, 0.05);
+}
+
+.co2-snippet p {
+    color: var(--c-darkgray);
+}
+
+.co2-snippet div {
+    row-gap: var(--unit-middle);
+}
+
+.section-impact-image img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    border-radius: var(--unit-2);
+    top: 0;
+    left: 0;
+}
+
+/* Section cta */
+
+.section-cta {
+    padding: var(--unit-13) 0px;
+}
+
+.section-cta h3 {
+    margin-bottom: var(--unit-3);
+}

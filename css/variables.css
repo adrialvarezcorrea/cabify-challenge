@@ -1,0 +1,160 @@
+/*
+    Index: 
+        1 -- Fonts
+        2 -- Color
+        3 -- Units
+        4 -- Space
+        5 -- Text
+*/
+
+
+
+/* 1 -- Fonts */
+
+@font-face {
+    font-family: "helvetica";
+    src: url("../fonts/Helvetica.ttf") format("ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "helvetica";
+    src: url("../fonts/Helvetica-Bold.ttf") format("ttf");
+    font-weight: 600;
+}
+
+
+
+:root {
+
+    /* 2 -- Color */
+
+    --c-yellow: #FFD047;
+    --c-black: #1A1A1A;
+    --c-white: #FFFFFF;
+    --c-lightgray: #F5F5F7;
+    --c-gray: #E6E5EA;
+    --c-darkgray: #A3A3A3;
+    --c-green: #78CD2F;
+
+
+
+    /* 3 -- Units */
+
+    /* 4 */
+    --unit-middle: .4rem;
+
+    /* 8 */
+    --unit: 0.8rem;
+
+    /* 16 */
+    --unit-2: calc(var(--unit) * 2);
+
+    /* 24 */
+    --unit-3: calc(var(--unit) * 3);
+
+    /* 32 */
+    --unit-4: calc(var(--unit) * 4);
+
+    /* 40 */
+    --unit-5: calc(var(--unit) * 5);
+
+    /* 48 */
+    --unit-6: calc(var(--unit) * 6);
+
+    /* 56 */
+    --unit-7: calc(var(--unit) * 7);
+
+    /* 64 */
+    --unit-8: calc(var(--unit) * 8);
+
+    /* 72 */
+    --unit-9: calc(var(--unit) * 9);
+
+    /* 80 */
+    --unit-10: calc(var(--unit) * 10);
+
+    /* 88 */
+    --unit-11: calc(var(--unit) * 11);
+
+    /* 96 */
+    --unit-12: calc(var(--unit) * 12);
+
+    /* 104 */
+    --unit-13: calc(var(--unit) * 13);
+    
+    /* 112 */
+    --unit-14: calc(var(--unit) * 14);
+
+    /* 120 */
+    --unit-15: calc(var(--unit) * 15);
+
+    /* 128 */
+    --unit-16: calc(var(--unit) * 16);
+
+    /* 136 */
+    --unit-17: calc(var(--unit) * 17);
+
+    /* 144 */
+    --unit-18: calc(var(--unit) * 18);
+
+    /* 152 */
+    --unit-19: calc(var(--unit) * 19);
+
+    /* 160 */
+    --unit-20: calc(var(--unit) * 20);
+
+
+
+    /* 4 -- Space */
+
+    --padd-middle: calc(var(--unit-3)/2);
+    --padd: var(--unit-3);
+    --padd-s: var(--unit);
+    --padd-col-main: var(--unit-6);
+
+    --padd-col-main-s: var(--unit);
+
+
+
+    /* 5 -- Text */
+
+    --font: helvetica;
+    --fw-regular: 500;
+    --fw-strong: 600;
+
+    /* Desktop */
+
+    --txt-h1: 6.4rem;
+    --txt-h1-lh: 1.10em;
+
+    --txt-h2: 4rem;
+    --txt-h2-lh: 1.10em;
+
+    --txt-h3: 2.4rem;
+    --txt-h3-lh: 1.20em;
+
+    --txt-h4: 1.8rem;
+    --txt-h4-lh: 1.30em;
+
+    --txt-body: 1.6rem;
+    --txt-body-lh: 1.30em;
+
+    /* Mobile */
+
+    --txt-h1-s: 3.4rem;
+    --txt-h1-s-lh: 1.10em;
+
+    --txt-h2-s: 2.8rem;
+    --txt-h2-s-lh: 1.10em;
+
+    --txt-h3-s: 1.8rem;
+    --txt-h3-s-lh: 1.20em;
+
+    --txt-h4-s: 1.6rem;
+    --txt-h4-s-lh: 1.30em;
+
+    --txt-body-s: 1.4rem;
+    --txt-body-s-lh: 1.30em;
+
+}
