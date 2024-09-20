@@ -78,8 +78,13 @@ nav {
     transform: translateY(-100%);
 }
 
-.nav-logo {
+.nav-logo-desktop {
     height: var(--unit-3);
+}
+
+.nav-logo-mobile {
+    height: var(--unit-3);
+    display: none;
 }
 
 .btn {
